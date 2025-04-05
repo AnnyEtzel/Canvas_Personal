@@ -1,0 +1,43 @@
+# Análisis PESTEL del sector de perfumes
+
+def analisis_pestel():
+    pestel = {
+        "Político": [
+            "Regulaciones sobre importación y exportación de fragancias.",
+            "Políticas arancelarias que afectan el costo de productos extranjeros.",
+            "Estabilidad política en países productores de esencias."
+        ],
+        "Económico": [
+            "Inflación que afecta el poder adquisitivo del consumidor.",
+            "Variación en tasas de cambio que impactan insumos importados.",
+            "Tendencias de consumo de lujo y premium en economías emergentes."
+        ],
+        "Social": [
+            "Preferencias cambiantes de los consumidores hacia productos veganos o cruelty-free.",
+            "Mayor conciencia sobre la identidad olfativa personal.",
+            "Influencers y redes sociales impulsando marcas de perfumes."
+        ],
+        "Tecnológico": [
+            "Avances en biotecnología para desarrollar nuevas fragancias.",
+            "Uso de inteligencia artificial para personalizar perfumes.",
+            "E-commerce y realidad aumentada para probar perfumes virtualmente."
+        ],
+        "Ecológico": [
+            "Demanda de empaques sostenibles y reciclables.",
+            "Preocupación por el impacto ambiental de los ingredientes sintéticos.",
+            "Aumento de marcas con compromiso ecológico."
+        ],
+        "Legal": [
+            "Normas internacionales sobre etiquetado y seguridad de productos.",
+            "Regulación de ingredientes alergénicos por la IFRA (International Fragrance Association).",
+            "Legislaciones sobre propiedad intelectual y marcas registradas."
+        ]
+    }
+
+    for factor, puntos in pestel.items():
+        print(f"\n🔹 {factor}:\n")
+        for punto in puntos:
+            print(f"   - {punto}")
+
+# Ejecutar el análisis
+analisis_pestel()
