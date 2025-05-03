@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Rêve Perfumería</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e6ccff, #f0f0f5);
+      color: #000;
+    }
+    header {
+      background-color: #d8bfd8;
+      color: #000;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 4px solid #c5b358;
+    }
+    header img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    nav {
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 10px;
+      font-weight: bold;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+    section {
+      display: none;
+      padding: 40px;
+    }
+    section.active {
+      display: block;
+    }
+    h2 {
+      color: #c5b358;
+    }
+    footer {
+      background-color: #b0b0b0;
+      color: #000;
+      padding: 20px;
+      text-align: center;
+    }
+    .btn-catalogo {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #c5b358;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    .inicio-imgs img {
+      width: 200px;
+      height: auto;
+      margin: 10px;
+      border: 2px solid #c5b358;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function mostrarSeccion(id) {
+      document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+    window.onload = () => mostrarSeccion('inicio');
+  </script>
+</head>
+<body>
+  <header>
+    <img src="https://www.canva.com/design/DAGRTiRHeow/q1L6C-dV9t3oZTtfhZVZ4g/view?utm_content=DAGRTiRHeow&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" alt="Logo Le Rêve">
+    <h1>Le Rêve Perfumería</h1>
+    <p>Perfumes originales - Exclusividad & Elegancia</p>
+  </header>
+  <nav>
+    <a href="#" onclick="mostrarSeccion('inicio')">Inicio</a>
+    <a href="#" onclick="mostrarSeccion('mision')">Misión</a>
+    <a href="#" onclick="mostrarSeccion('vision')">Visión</a>
+    <a href="#" onclick="mostrarSeccion('valores')">Valores</a>
+    <a href="#" onclick="mostrarSeccion('contacto')">Contacto</a>
+    <a href="#" onclick="mostrarSeccion('catalogo')">Catálogo</a>
+  </nav>
+
+  <section id="inicio" class="active">
+    <h2>Últimos Lanzamientos</h2>
+    <div class="inicio-imgs">
+      <a href="#" target="_blank"><img src="https://via.placeholder.com/200x250.png?text=Perfume+Árabe+1" alt="Perfume Árabe 1"></a>
+      <a href="#" target="_blank"><img src="https://via.placeholder.com/200x250.png?text=Perfume+Árabe+2" alt="Perfume Árabe 2"></a>
+      <a href="#" target="_blank"><img src="https://via.placeholder.com/200x250.png?text=Perfume+Diseñador+1" alt="Perfume Diseñador 1"></a>
+      <a href="#" target="_blank"><img src="https://via.placeholder.com/200x250.png?text=Perfume+Diseñador+2" alt="Perfume Diseñador 2"></a>
+    </div>
+  </section>
+
+  <section id="mision">
+    <h2>Misión</h2>
+    <p>Brindar a nuestros clientes una experiencia de compra segura y exclusiva de perfumes originales, garantizando calidad y autenticidad en cada fragancia.</p>
+  </section>
+
+  <section id="vision">
+    <h2>Visión</h2>
+    <p>Convertirnos en una empresa líder en la venta de perfumes originales, con la capacidad de importar directamente y vender al por mayor, ampliando nuestra presencia en el mercado.</p>
+  </section>
+
+  <section id="valores">
+    <h2>Valores</h2>
+    <ul>
+      <li>Autenticidad</li>
+      <li>Confianza</li>
+      <li>Exclusividad</li>
+      <li>Responsabilidad</li>
+      <li>Pasión por el cliente</li>
+    </ul>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/573113004924" target="_blank">+57 311 300 4924</a></p>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/le_reveperfumeria" target="_blank">@le_reveperfumeria</a></p>
+  </section>
+
+  <section id="catalogo">
+    <h2>Catálogo de Productos</h2>
+    <p>Accede a nuestro catálogo completo de perfumes exclusivos.</p>
+    <a class="btn-catalogo" href="#" target="_blank">Ver Catálogo</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Le Rêve Perfumería. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
